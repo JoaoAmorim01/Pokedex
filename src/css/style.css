@@ -1,0 +1,186 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    max-width: 100%; /* Mudei de 1280px e resolvi meu problema com o fundo */
+    margin: 0 auto;
+    background-color: #faebd7;
+    color: #333333;
+    
+    &.modo-escuro {
+    background-color: #212121;
+    color:#f5f5f5;
+    }
+}
+
+.modo-escuro .pokecard:hover{
+    background-color: #a8a8a8;
+}
+
+header{
+    background-color: #cc0000;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 10px 10px;
+}
+
+header .pokeball{
+    width: 45px;
+    margin-top: 25px;    
+}
+
+header #logo{
+    height: 100px;
+}
+
+header .img-button{
+    height: 50px;
+
+}
+
+header #botao-tema{
+    background: none;
+    border: none;
+}
+
+header .pokeball:hover,
+.img-button:hover,
+main .pokecard{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+a .a{
+    width: 22.71px;
+    height: 10px;
+}
+
+main {
+    padding: 25px;
+}
+
+main .pokelist {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+main .pokecard{
+    background-color: #d8e3ec;
+    width: 185px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 25px;
+    transition: 0.3s ease-in-out;
+}
+
+main .pokecard:hover{
+    background-color: #96d9d6;
+}
+
+
+
+main .pokecard .pokeinfo{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+
+main .pokecard .pokeinfo span{
+    padding: 3px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+main .pokecard .pokegif{
+    width: 90px;
+    height: 90px;
+}
+
+main .pokecard .poketipos {
+    display: flex;
+    gap: 15px;
+}
+
+main .pokecard .poketipos li{
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.grama {
+    background-color: #7ac74c;
+}
+
+.veneno {
+    background-color: #ae44adfb;
+}
+
+.fantasma {
+    background-color: #7d129bfb;
+}
+
+.fada{
+    background-color: #df67ddfb;
+}
+
+.fogo {
+    background-color: #ee8130;
+}
+
+.agua {
+    background-color: #6390f0;
+}
+
+.gelo {
+    background-color: #2edbf2;
+}
+
+.voador {
+    background-color: #487ef1;
+}
+
+.inseto{
+    background-color: #a6b91a;
+}
+
+.terra {
+    background-color: #ae4444;
+}
+
+.eletrico{
+    background-color: #f3d500;
+}
+
+.normal{
+    background-color: #808080;
+}
+
+.lutador{
+    background-color: #f68420ad;
+}
+
+.psi{
+    background-color: #b862b7fb;;
+}
+
+.rocha{
+    background-color: #9c8c15;
+}
+
+.aco{
+    background-color: #676666;
+}
+
+.dragao{
+    background-color: #e48d28;
+}
+main .pokedesc {
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
